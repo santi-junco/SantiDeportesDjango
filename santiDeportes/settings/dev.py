@@ -11,18 +11,18 @@ ALLOWED_HOSTS = ['*']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': parser.get('default','name'),
-        'USER':  parser.get('default','user'),
-        'PASSWORD':  parser.get('default','password'),
-        'HOST': parser.get('default','host'),
+        'NAME': 'santiDeportes',
+        'USER': 'postgres',
+        'PASSWORD': 'SANTIjunco11',
+        'HOST': 'localhost',
         'PORT': '5432'
     }
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = parser.get('email','user')
-EMAIL_HOST_PASSWORD = parser.get('email','password')
+EMAIL_HOST_USER = 'juncosantiago11@gmail.com'
+EMAIL_HOST_PASSWORD = 'wohxdaxfqklpdiic'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
