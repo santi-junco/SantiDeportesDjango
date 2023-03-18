@@ -49,7 +49,7 @@ INSTALLED_APPS = DJANGO_APPS + LOCALS_APPS + THIRD_APPS
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.Usuario'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

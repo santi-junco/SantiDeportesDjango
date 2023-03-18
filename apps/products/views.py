@@ -21,4 +21,3 @@ class ProductList(ListView):
     model = Product
     form_class = ProductForm
     template_name = 'home.html'
-    success_url = reverse_lazy('home')
