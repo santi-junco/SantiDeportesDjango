@@ -85,7 +85,7 @@
       role="presentation"
       width="100%"
     >
-      {% if desde == "recup" %}
+      {% if tipo == "recup" %}
       <tr>
         <td bgcolor="#f0f0f0" style="font-size: 0">&​nbsp;</td>
         <td
@@ -219,7 +219,7 @@
             </p>
             <p style="margin: 30px 0 30px 0; text-align: center">
               <a
-                href="{{ message | safe }}"
+                href="{{ url }}"
                 target="_blank"
                 style="
                   font-size: 18px;
