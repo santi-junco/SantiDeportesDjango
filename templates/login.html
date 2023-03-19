@@ -100,19 +100,17 @@
         <h1 class="mb-4">Bienvenido</h1>
         <form
           class="mb-5"
-          action="/iniciarSesion"
           method="post"
-          onsubmit="return validarlog();"
         >
+          {%csrf_token%}
           <div class="mb-4">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <label for="exampleInputUsername1" class="form-label">Username</label>
             <input
-              type="email"
+              type="text"
               class="form-control border-0 bg-dark-x"
-              placeholder="Ingresa tu email"
-              name="email"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
+              placeholder="Ingresa tu username"
+              name="username"
+              id="exampleInputUsername1"
               required
             />
           </div>
@@ -151,10 +149,10 @@
             role="alert"
             id="liveAlert"
           >
-            <span
-              ><i class="fa fa-exclamation-circle" aria-hidden="true"></i> {{
-              message }}</span
-            >
+            <span>
+              <i class="fa fa-exclamation-circle" aria-hidden="true"></i> 
+              {{form.errors}}
+            </span>
             <button
               type="button"
               class="btn-close"
