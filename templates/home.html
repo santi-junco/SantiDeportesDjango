@@ -94,8 +94,7 @@
               <div id="carouselExampleControls{{ i.id }}" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   {% for j in i.photo %}
-                    <img src="/media/products/z1.jpg" alt="">
-                    <div class="carousel-item active">
+                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
                       <img src="/media/{{ j }}" class="d-block w-100" alt="...">
                     </div>
                   {% endfor %}
